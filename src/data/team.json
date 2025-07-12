@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "role": "Recruiter",
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "email": "bob.smith@example.com",
+    "role": "Hiring Manager",
+    "status": "Pending"
+  },
+  {
+    "id": 3,
+    "name": "Charlie Davis",
+    "email": "charlie.davis@example.com",
+    "role": "Recruiter",
+    "status": "Active"
+  },
+  {
+    "id": 4,
+    "name": "Diana Prince",
+    "email": "diana.prince@example.com",
+    "role": "Admin",
+    "status": "Inactive"
+  },
+  {
+    "id": 5,
+    "name": "Evan Thomas",
+    "email": "evan.thomas@example.com",
+    "role": "Hiring Manager",
+    "status": "Active"
+  },
+  {
+    "id": 6,
+    "name": "Fiona Zhang",
+    "email": "fiona.zhang@example.com",
+    "role": "Recruiter",
+    "status": "Pending"
+  },
+  {
+    "id": 7,
+    "name": "George Harris",
+    "email": "george.harris@example.com",
+    "role": "Admin",
+    "status": "Active"
+  },
+  {
+    "id": 8,
+    "name": "Hannah Lee",
+    "email": "hannah.lee@example.com",
+    "role": "Hiring Manager",
+    "status": "Inactive"
+  },
+  {
+    "id": 9,
+    "name": "Isaac Turner",
+    "email": "isaac.turner@example.com",
+    "role": "Recruiter",
+    "status": "Active"
+  },
+  {
+    "id": 10,
+    "name": "Julia Kim",
+    "email": "julia.kim@example.com",
+    "role": "Admin",
+    "status": "Pending"
+  }
+]

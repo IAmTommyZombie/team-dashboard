@@ -17,7 +17,7 @@ export default function Dashboard() {
     setUsers((old) => [...old, newUser]);
   };
 
-  // Calculate role and status distribution for pie charts
+  // Pie Chart Calculations
   const roleCounts = useMemo(() => {
     return users.reduce((acc, user) => {
       acc[user.role] = (acc[user.role] || 0) + 1;
@@ -37,18 +37,8 @@ export default function Dashboard() {
     datasets: [
       {
         data: Object.values(roleCounts),
-        backgroundColor: [
-          "#3B82F6", // blue-600
-          "#10B981", // green-500
-          "#EF4444", // red-500
-          "#F59E0B", // yellow-500
-        ],
-        borderColor: [
-          "#1E3A8A", // blue-900
-          "#065F46", // green-800
-          "#991B1B", // red-800
-          "#B45309", // yellow-800
-        ],
+        backgroundColor: ["#3B82F6", "#10B981", "#EF4444", "#F59E0B"],
+        borderColor: ["#1E3A8A", "#065F46", "#991B1B", "#B45309"],
         borderWidth: 1,
       },
     ],
@@ -60,15 +50,11 @@ export default function Dashboard() {
       {
         data: Object.values(statusCounts),
         backgroundColor: [
-          "#10B981", // green-500 (Active)
-          "#F59E0B", // yellow-500 (Pending)
-          "#EF4444", // red-500 (Inactive)
+          "#10B981", // (Active)
+          "#F59E0B", // (Pending)
+          "#EF4444", // (Inactive)
         ],
-        borderColor: [
-          "#065F46", // green-800
-          "#B45309", // yellow-800
-          "#991B1B", // red-800
-        ],
+        borderColor: ["#065F46", "#B45309", "#991B1B"],
         borderWidth: 1,
       },
     ],
@@ -80,8 +66,8 @@ export default function Dashboard() {
         position: "top",
         labels: {
           color: document.documentElement.classList.contains("dark")
-            ? "#D1D5DB" // gray-300
-            : "#374151", // gray-700
+            ? "#D1D5DB"
+            : "#374151",
         },
       },
     },
@@ -94,7 +80,6 @@ export default function Dashboard() {
         <h1 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
           Team Management Dashboard
         </h1>
-        {/* Charts */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div>
             <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">

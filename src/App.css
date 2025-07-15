@@ -34,7 +34,6 @@ body,
   animation: fadeIn 0.3s ease-in;
 }
 
-/* Debug outlines (toggle for development) */
 .debug * {
   outline: 1px solid red !important;
 }

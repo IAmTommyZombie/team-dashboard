@@ -18,7 +18,6 @@ body,
   box-sizing: inherit;
 }
 
-/* Optional: Keep this for debugging only, toggle via a class or remove for production */
 .debug * {
   outline: 1px solid red !important;
 }
